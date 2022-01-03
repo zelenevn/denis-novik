@@ -1,3 +1,22 @@
 /* Fonts */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:900&display=swap);
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --background-light: #FFFFFF;
+  --background-dark: #F6F6F6;
+  --text-dark-color: #070707;
+  --text-light-color: #828282;
+  --primary-color: #070707;
+
+  /* Font */
+  --font-family: "Roboto";
+  --font-weight: 900;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 34px;
+  --font-size-largest: 47px;
+}
