@@ -49,6 +49,7 @@ a {
 .page {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
+  scroll-behavior: smooth;
 }
 
 .container {
