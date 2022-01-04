@@ -78,6 +78,12 @@ a {
 
 /* Header */
 
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: var(--background-light);
+}
+
 .header__container {
   padding: 33px 0;
 }
