@@ -246,6 +246,11 @@ a {
   justify-items: center;
 }
 
+.project__image {
+  width: 100%;
+  height: auto;
+}
+
 .project__link {
   font-size: var(--font-size-medium);
   text-decoration: underline;
