@@ -138,6 +138,10 @@ a {
   height: auto;
 }
 
+.hero__image_mobile {
+  display: none;
+}
+
 .choose-language {
   display: flex;
   width: 20px;
@@ -286,4 +290,44 @@ a {
   font-size: var(--font-size-smallest);
   color: var(--text-light-color);
   text-align: center;
+}
+
+/* Mobile adaptability */
+
+@media (max-width: 375px) {
+  
+  .container {
+    max-width: 316px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .hero__image_mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__image_desktop {
+    display: none;
+  }
+
+  .hero__content {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 20px;
+  }
+
+  .choose-language {
+    display: none;
+  }
+
+  .skills__list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 80px;
+    justify-content: center;
+  }
 }
