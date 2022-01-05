@@ -55,6 +55,7 @@ a {
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .title {
@@ -82,14 +83,27 @@ a {
   position: sticky;
   top: 0px;
   background-color: var(--background-light);
+  z-index: 5;
 }
 
 .header__container {
-  padding: 33px 0;
+  padding: 33px 10px;
 }
 
 .container_underline {
   border-bottom: 1px solid var(--secondary-color);
+}
+
+.header__burger {
+  display: none;
+}
+
+.burger__icon {
+  cursor: pointer;
+}
+
+.burger__page {
+  display: none;
 }
 
 .menu__list {
@@ -179,7 +193,7 @@ a {
 /* Skills */
 
 .skills__container {
-  padding: 100px 0;
+  padding: 100px 10px;
   display: grid;
   grid-template-rows: repeat(3, max-content);
   row-gap: 70px;
@@ -229,7 +243,7 @@ a {
 }
 
 .portfolio__container {
-  padding: 100px 0;
+  padding: 100px 10px;
   display: grid;
   grid-template-rows: repeat(2, max-content);
   row-gap: 45px;
@@ -300,8 +314,57 @@ a {
     max-width: 316px;
   }
 
-  .header {
+  .menu {
     display: none;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .burger__page {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--background-light);
+  }
+
+  .burger__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 30px;
+  }
+
+  .burger__list {
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    row-gap: 60px;
+  }
+
+  .burger__buttons {
+    order: 1;
+    cursor: pointer;
+  }
+
+  .burger__page_hidden {
+    display: none;
+  }
+
+  .burger__link {
+    font-size: var(--font-size-large);
   }
 
   .hero__image_mobile {

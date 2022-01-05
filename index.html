@@ -15,6 +15,9 @@
 <body>
   <header class="header">
     <div class="container header__container container_underline">
+       <div class="header__burger burger">
+        <img src="./images/icons/burger.svg" alt="" class="burger__icon">
+       </div>
       <nav class="menu">
         <ul class="menu__list">
           <li>
@@ -180,6 +183,33 @@
       </div>
     </div>
   </footer>
+  <div class="burger__page burger__page_hidden">
+    <div class="burger__content">
+      <div class="burger__buttons">
+        <img src="./images/icons/close.svg" alt="" class="burger__close">
+      </div>
+    <nav class="burger__menu">
+      <ul class="burger__list">
+        <li>
+          <a href="#home" class="burger__link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="burger__link">About me</a>
+        </li>
+        <li>
+          <a href="#skills" class="burger__link">Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="burger__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contacts" class="burger__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </div>
   <script src="./scripts/header.js"></script>
+  <script src="./scripts/burger.js"></script>
 </body>
 </html> 
