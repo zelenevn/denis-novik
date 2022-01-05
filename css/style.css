@@ -138,6 +138,26 @@ a {
   height: auto;
 }
 
+.choose-language {
+  display: flex;
+  width: 20px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.language {
+  font-size: var(--font-size-small);
+  color: var(--text-light-color);
+}
+
+.language_active {
+  color: var(--text-dark-color);
+}
+
+.devider {
+  margin: 0 5px;
+}
+
 /* About */
 
 .about {
