@@ -21,5 +21,5 @@ docker build -t <image-name:tag> .
 docker run -d -p <local port:container port> <image name:tag>
 ```
 
--d – Detached mode(run container in background).
+-d – Detached mode(run container in background). <br>
 -p – Post. Example: 80:80.
