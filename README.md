@@ -19,7 +19,7 @@ docker build -t <image-name:tag> .
 
 3.Run docker container
 ```bash
-docker run -d -p <local port:container port> <image name:tag>
+docker run -d -p <local port:container port> <image-name:tag>
 ```
 
 -d – Detached mode(run container in background). <br>
