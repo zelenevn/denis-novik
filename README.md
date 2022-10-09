@@ -16,7 +16,7 @@ docker build -t <image-name:tag> .
 ```
 -t – Image name and tag. Example: denis-novik-site:latest
 
-3.Run docket container
+3.Run docker container
 ```bash
 docker run -d -p <local port:container port> <image name:tag>
 ```
