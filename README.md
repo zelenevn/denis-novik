@@ -22,4 +22,4 @@ docker run -d -p <local port:container port> <image name:tag>
 ```
 
 -d – Detached mode(run container in background). <br>
--p – Post. Example: 80:80.
+-p – Port binding. Example: 80:80.
